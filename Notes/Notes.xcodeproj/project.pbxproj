@@ -15,6 +15,7 @@
 		04F5A7D32C377762008780F6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7D22C377762008780F6 /* Note.swift */; };
 		04F5A7D52C378419008780F6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7D42C378419008780F6 /* DetailView.swift */; };
 		04F5A7D82C3787CC008780F6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7D72C3787CC008780F6 /* HeaderView.swift */; };
+		04F5A7DA2C378890008780F6 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7D92C378890008780F6 /* CreditsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		04F5A7D22C377762008780F6 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		04F5A7D42C378419008780F6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		04F5A7D72C3787CC008780F6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		04F5A7D92C378890008780F6 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				049A4D582C36D31B00C09E45 /* ContentView.swift */,
 				04F5A7D42C378419008780F6 /* DetailView.swift */,
+				04F5A7D92C378890008780F6 /* CreditsView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				04F5A7D82C3787CC008780F6 /* HeaderView.swift in Sources */,
 				049A4D592C36D31B00C09E45 /* ContentView.swift in Sources */,
 				04F5A7D52C378419008780F6 /* DetailView.swift in Sources */,
+				04F5A7DA2C378890008780F6 /* CreditsView.swift in Sources */,
 				049A4D572C36D31B00C09E45 /* NotesApp.swift in Sources */,
 				04F5A7D32C377762008780F6 /* Note.swift in Sources */,
 			);
