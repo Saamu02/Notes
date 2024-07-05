@@ -106,15 +106,18 @@ struct ContentView: View {
                         
                         ForEach(0..<notes.count, id: \.self) { i in
                             
-                            HStack {
-                                Capsule()
-                                    .frame(width: 4)
-                                    .foregroundStyle(.accent)
+                            NavigationLink(destination: DetailView(note: notes[i], count: notes.count, index: i)) {
                                 
-                                Text(notes[i].text)
-                                    .lineLimit(1)
-                                    .padding(.leading, 5)
-                            }//: HSTACK
+                                HStack {
+                                    Capsule()
+                                        .frame(width: 4)
+                                        .foregroundStyle(.accent)
+                                    
+                                    Text(notes[i].text)
+                                        .lineLimit(1)
+                                        .padding(.leading, 5)
+                                }//: HSTACK
+                            }//: NAVIGATION LINK
                         }//: LOOP
                         .onDelete(perform: { indexSet in
                             deleteNote(offSets: indexSet)

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DetailView: View {
     
-    
     // MARK: - PROPERTY
     
     let note: Note
@@ -20,7 +19,41 @@ struct DetailView: View {
     // MARK: - BODY
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        VStack(alignment: .center, spacing: 3) {
+                
+            HeaderView()
+            
+            Spacer()
+            
+            ScrollView(.vertical) {
+                
+                Text(note.text)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+            }
+            
+            Spacer()
+
+            HStack(alignment: .center) {
+                
+                Image(systemName: "gear")
+                    .imageScale(.large)
+                
+                Spacer()
+                
+                Text("\(index + 1) / \(count)")
+                
+                
+                Spacer()
+
+                Image(systemName: "info.circle")
+                    .imageScale(.large)
+            }
+            .foregroundStyle(.secondary)
+            
+        }//: VSTACK
     }
 }
 
