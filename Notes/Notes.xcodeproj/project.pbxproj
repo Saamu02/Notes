@@ -16,6 +16,7 @@
 		04F5A7D52C378419008780F6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7D42C378419008780F6 /* DetailView.swift */; };
 		04F5A7D82C3787CC008780F6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7D72C3787CC008780F6 /* HeaderView.swift */; };
 		04F5A7DA2C378890008780F6 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7D92C378890008780F6 /* CreditsView.swift */; };
+		04F5A7DE2C378BC7008780F6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F5A7DD2C378BC7008780F6 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		04F5A7D42C378419008780F6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		04F5A7D72C3787CC008780F6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		04F5A7D92C378890008780F6 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		04F5A7DD2C378BC7008780F6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				049A4D582C36D31B00C09E45 /* ContentView.swift */,
 				04F5A7D42C378419008780F6 /* DetailView.swift */,
 				04F5A7D92C378890008780F6 /* CreditsView.swift */,
+				04F5A7DD2C378BC7008780F6 /* SettingsView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F5A7DE2C378BC7008780F6 /* SettingsView.swift in Sources */,
 				04F5A7D82C3787CC008780F6 /* HeaderView.swift in Sources */,
 				049A4D592C36D31B00C09E45 /* ContentView.swift in Sources */,
 				04F5A7D52C378419008780F6 /* DetailView.swift in Sources */,

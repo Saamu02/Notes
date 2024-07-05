@@ -15,7 +15,8 @@ struct DetailView: View {
     let index: Int
     
     @State private var isCreditsPresented: Bool = false
-    
+    @State private var isSettingsPresented: Bool = false
+
     // MARK: - BODY
     var body: some View {
 
@@ -31,7 +32,7 @@ struct DetailView: View {
                     .font(.title3)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
-            }
+            }//: SCROLLVIEW
             
             Spacer()
 
@@ -39,6 +40,12 @@ struct DetailView: View {
                 
                 Image(systemName: "gear")
                     .imageScale(.large)
+                    .onTapGesture {
+                      isSettingsPresented.toggle()
+                    }
+                    .sheet(isPresented: $isSettingsPresented, content: {
+                      SettingsView()
+                    })
                 
                 Spacer()
                 
@@ -55,7 +62,7 @@ struct DetailView: View {
                     .sheet(isPresented: $isCreditsPresented, content: {
                       CreditsView()
                     })
-            }
+            }//: HSTACK
             .foregroundStyle(.secondary)
             
         }//: VSTACK

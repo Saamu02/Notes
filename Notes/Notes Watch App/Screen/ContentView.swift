@@ -13,7 +13,8 @@ struct ContentView: View {
     @State private var notes = [Note]()
     @State private var text = ""
     
-    
+    @AppStorage("lineCount") private var lineCount: Int = 1
+
     // MARK: - FUNCTION
     func getDocumentDirectory() -> URL {
         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -109,7 +110,7 @@ struct ContentView: View {
                                         .foregroundStyle(.accent)
                                     
                                     Text(notes[i].text)
-                                        .lineLimit(1)
+                                        .lineLimit(lineCount)
                                         .padding(.leading, 5)
                                 }//: HSTACK
                             }//: NAVIGATION LINK
